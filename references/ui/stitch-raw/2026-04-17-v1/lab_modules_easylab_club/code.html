@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lab Modules | The EasyLab Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Manrope', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .glass-nav {
+            background: rgba(247, 250, 252, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#c6d5ee",
+                    "on-primary-container": "#38527b",
+                    "secondary-dim": "#455468",
+                    "surface": "#f7fafc",
+                    "on-secondary-container": "#445367",
+                    "on-secondary": "#f7f9ff",
+                    "surface-tint": "#455f88",
+                    "error": "#9f403d",
+                    "inverse-surface": "#0b0f10",
+                    "surface-container-high": "#dfeaef",
+                    "error-dim": "#4e0309",
+                    "surface-dim": "#ccdde4",
+                    "surface-container-highest": "#d7e5eb",
+                    "secondary-fixed": "#d4e4fc",
+                    "on-background": "#283439",
+                    "surface-variant": "#d7e5eb",
+                    "on-surface": "#283439",
+                    "primary-dim": "#39537c",
+                    "on-primary-fixed-variant": "#425c85",
+                    "surface-container": "#e7eff3",
+                    "on-error": "#fff7f6",
+                    "outline-variant": "#a7b4ba",
+                    "secondary-container": "#d4e4fc",
+                    "tertiary": "#5d5d78",
+                    "on-tertiary": "#fbf7ff",
+                    "on-secondary-fixed": "#324054",
+                    "inverse-on-surface": "#9a9d9f",
+                    "tertiary-dim": "#50516c",
+                    "tertiary-fixed": "#dbdafb",
+                    "error-container": "#fe8983",
+                    "on-tertiary-container": "#4c4c67",
+                    "primary-container": "#d6e3ff",
+                    "on-primary-fixed": "#254067",
+                    "on-tertiary-fixed": "#393953",
+                    "surface-container-low": "#eff4f7",
+                    "on-secondary-fixed-variant": "#4e5d71",
+                    "surface-bright": "#f7fafc",
+                    "background": "#f7fafc",
+                    "tertiary-container": "#dbdafb",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface-variant": "#546166",
+                    "primary-fixed-dim": "#bfd5ff",
+                    "outline": "#707d82",
+                    "tertiary-fixed-dim": "#cdccec",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#455f88",
+                    "on-primary": "#f6f7ff",
+                    "secondary": "#516075",
+                    "on-tertiary-fixed-variant": "#555571",
+                    "on-error-container": "#752121",
+                    "inverse-primary": "#b3cdfd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-bold tracking-tight text-[#2D3748]">The EasyLab Club</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#455f88] font-bold border-b-2 border-[#455f88] pb-1 transition-colors duration-300" href="#">Modules</a>
+<a class="text-[#707d82] font-medium hover:text-[#455f88] transition-colors duration-300" href="#">Resources</a>
+<a class="text-[#707d82] font-medium hover:text-[#455f88] transition-colors duration-300" href="#">Pricing</a>
+<a class="text-[#707d82] font-medium hover:text-[#455f88] transition-colors duration-300" href="#">About</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-[#707d82] font-medium hover:text-[#455f88] transition-all px-4 py-2 scale-98 active:opacity-80">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-dim transition-all scale-98 active:opacity-80">Join Club</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-24 md:py-32 flex flex-col items-start">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-wider">The Laboratory</span>
+<h1 class="text-6xl md:text-8xl font-extrabold text-on-surface leading-[1.05]">Lab Modules</h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">Practical skills you can apply immediately to transform your workflow from manual to clinical precision.</p>
+</div>
+<div class="relative">
+<div class="aspect-video bg-surface-container-high rounded-xl overflow-hidden relative">
+<img class="object-cover w-full h-full mix-blend-overlay opacity-60" data-alt="Modern minimalist laboratory interior with stainless steel equipment and bright clinical lighting, symbolizing precision and efficiency" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE1vOeYFNfYrJ3LcqXFANnuTHcTSzZccnpbNZrV47kmL0QxnoKoipBTW1bBXCNnZ_y2pNgulNiw06QY2vZNZS7qj78mKchfEfJTVP7ZcNK1rjsq97uDsj70tksHyAa5RgWcrGb7eAkFAYKPZO56MWI_aVqVGt3zZPfHPVC2V1p0uTj1sWivLqNLeWTSukzIYQoALWKBSVXnJIKvjfe0W9SjD1mEnJ17K1YBcBLEar7tCLhYhgg-nr1MMODN9WEX6IZEEsTVNtT2vo"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+</div>
+<!-- Asymmetric Floating Data Card -->
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-6 shadow-xl rounded-xl border border-outline-variant/15 max-w-xs hidden lg:block">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary p-2 bg-primary-container rounded-lg" data-icon="biotech">biotech</span>
+<span class="text-sm font-bold text-on-surface">Precision Metrics</span>
+</div>
+<div class="space-y-2">
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+<span class="text-xs text-on-surface-variant">94% Efficiency gain observed in Lab 01</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Free Entry Section: Foundation Resources -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-bold mb-4">Foundation Resources</h2>
+<p class="text-on-surface-variant text-lg">Every lab needs a baseline. Access our curated entry-level toolkits to establish your clinical workflow foundations at no cost.</p>
+</div>
+<button class="group flex items-center gap-2 text-primary font-bold text-lg hover:underline transition-all">
+                        Start here <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Resource Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl" data-icon="menu_book">menu_book</span>
+<h3 class="text-xl font-bold mb-3">Free Guides</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Step-by-step documentation on modern laboratory management and digital hygiene.</p>
+<div class="h-1 w-12 bg-primary/20"></div>
+</div>
+<!-- Resource Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl" data-icon="checklist">checklist</span>
+<h3 class="text-xl font-bold mb-3">Modular Checklists</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Standard operating procedures (SOPs) for daily task execution and quality control.</p>
+<div class="h-1 w-12 bg-primary/20"></div>
+</div>
+<!-- Resource Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl" data-icon="handyman">handyman</span>
+<h3 class="text-xl font-bold mb-3">Starter Toolkit</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A curated set of base prompts and structural templates to launch your AI journey.</p>
+<div class="h-1 w-12 bg-primary/20"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Premium Modules Grid -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-bold mb-4">Premium Modules</h2>
+<p class="text-on-surface-variant">Bespoke expertise distilled into high-impact training units.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Module 1 -->
+<div class="group relative bg-surface-container-lowest p-1 rounded-xl border border-outline-variant/15 transition-all hover:border-primary/30 hover:scale-[1.02]">
+<div class="p-6 h-full flex flex-col">
+<div class="flex justify-between items-start mb-12">
+<span class="text-sm font-bold text-primary bg-primary-container px-3 py-1 rounded-full">Lab 01</span>
+<span class="text-2xl font-bold text-on-surface">€150</span>
+</div>
+<h3 class="text-xl font-extrabold mb-4 leading-tight">Build AI Workflows</h3>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Advanced systematic integration of LLMs into complex project lifecycles.</p>
+<button class="w-full py-3 bg-surface-container text-primary font-bold rounded hover:bg-primary hover:text-on-primary transition-all uppercase tracking-tighter text-xs">Enroll Now</button>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="group relative bg-surface-container-lowest p-1 rounded-xl border border-outline-variant/15 transition-all hover:border-primary/30 hover:scale-[1.02]">
+<div class="p-6 h-full flex flex-col">
+<div class="flex justify-between items-start mb-12">
+<span class="text-sm font-bold text-primary bg-primary-container px-3 py-1 rounded-full">Lab 02</span>
+<span class="text-2xl font-bold text-on-surface">€180</span>
+</div>
+<h3 class="text-xl font-extrabold mb-4 leading-tight">Create Operational Content with AI</h3>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Designing content machines that maintain brand authority with machine speed.</p>
+<button class="w-full py-3 bg-surface-container text-primary font-bold rounded hover:bg-primary hover:text-on-primary transition-all uppercase tracking-tighter text-xs">Enroll Now</button>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="group relative bg-surface-container-lowest p-1 rounded-xl border border-outline-variant/15 transition-all hover:border-primary/30 hover:scale-[1.02]">
+<div class="p-6 h-full flex flex-col">
+<div class="flex justify-between items-start mb-12">
+<span class="text-sm font-bold text-primary bg-primary-container px-3 py-1 rounded-full">Lab 03</span>
+<span class="text-2xl font-bold text-on-surface">€120</span>
+</div>
+<h3 class="text-xl font-extrabold mb-4 leading-tight">Digital Work Organization</h3>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">A clinical approach to structuring your digital workspace for peak cognitive output.</p>
+<button class="w-full py-3 bg-surface-container text-primary font-bold rounded hover:bg-primary hover:text-on-primary transition-all uppercase tracking-tighter text-xs">Enroll Now</button>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="group relative bg-surface-container-lowest p-1 rounded-xl border border-outline-variant/15 transition-all hover:border-primary/30 hover:scale-[1.02]">
+<div class="p-6 h-full flex flex-col">
+<div class="flex justify-between items-start mb-12">
+<span class="text-sm font-bold text-primary bg-primary-container px-3 py-1 rounded-full">Lab 04</span>
+<span class="text-2xl font-bold text-on-surface">€160</span>
+</div>
+<h3 class="text-xl font-extrabold mb-4 leading-tight">Automate Repetitive Tasks</h3>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Eliminate the manual burden by building self-sustaining automation scripts.</p>
+<button class="w-full py-3 bg-surface-container text-primary font-bold rounded hover:bg-primary hover:text-on-primary transition-all uppercase tracking-tighter text-xs">Enroll Now</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Explanation Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5">
+<h2 class="text-4xl font-bold leading-tight mb-6">Designed for Immediate Real-World Application.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">Unlike traditional theoretical courses, our Lab Modules are intensive, modular units. Each one is a "Lego piece" for your career—focused on a single high-utility skill that you can implement the same day you finish the lab.</p>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="w-10 h-10 bg-primary/10 rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</div>
+<h4 class="font-bold">Zero Fluff</h4>
+<p class="text-sm text-on-surface-variant">We cut through the noise to give you only the technical essentials.</p>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 bg-primary/10 rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+</div>
+<h4 class="font-bold">Modular Path</h4>
+<p class="text-sm text-on-surface-variant">Take only what you need, when you need it. No linear lock-in.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-7xl mx-auto px-8 pb-32">
+<div class="relative bg-primary overflow-hidden rounded-2xl p-12 md:p-24 text-center">
+<!-- Subtle Gradient Pattern -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-dim opacity-90"></div>
+<div class="relative z-10 flex flex-col items-center">
+<h2 class="text-on-primary text-4xl md:text-6xl font-extrabold mb-8 max-w-2xl">Ready to elevate your clinical performance?</h2>
+<button class="bg-on-primary text-primary px-10 py-4 rounded-lg text-lg font-bold hover:bg-surface-bright transition-all scale-98 active:opacity-90 shadow-xl">
+                        Access the modules
+                    </button>
+<p class="text-on-primary/60 mt-8 text-sm uppercase tracking-[0.2em]">Join 1,200+ professionals in the club</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full border-t border-outline-variant/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-lg font-bold text-[#2D3748]">The EasyLab Club</span>
+<p class="text-[#707d82] text-sm mt-2">© 2024 The EasyLab Club. Clinical Precision in Every Module.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#707d82] text-sm font-medium hover:text-[#455f88] underline underline-offset-4 decoration-transparent hover:decoration-[#455f88] transition-all" href="#">Terms of Service</a>
+<a class="text-[#707d82] text-sm font-medium hover:text-[#455f88] underline underline-offset-4 decoration-transparent hover:decoration-[#455f88] transition-all" href="#">Privacy Policy</a>
+<a class="text-[#707d82] text-sm font-medium hover:text-[#455f88] underline underline-offset-4 decoration-transparent hover:decoration-[#455f88] transition-all" href="#">Contact Support</a>
+<a class="text-[#707d82] text-sm font-medium hover:text-[#455f88] underline underline-offset-4 decoration-transparent hover:decoration-[#455f88] transition-all" href="#">Laboratory Standards</a>
+</div>
+</div>
+</footer>
+</body></html>

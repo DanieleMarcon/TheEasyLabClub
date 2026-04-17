@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The EasyLab Club | Architecture of Excellence</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "forest": "#1a2e26",
+                        "forest-light": "#2a4238",
+                        "cream": "#fdfcf7",
+                        "cream-dark": "#f5f2e8",
+                        "bronze": "#a67c52",
+                        "bronze-light": "#c4a484",
+                        "charcoal": "#2d2d2d"
+                    },
+                    "fontFamily": {
+                        "serif": ["Playfair Display", "serif"],
+                        "sans": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { 
+                @apply bg-cream text-forest font-sans antialiased; 
+            }
+            h1, h2, h3, h4 { 
+                @apply font-serif tracking-tight; 
+            }
+        }
+        .editorial-rule {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #a67c52, transparent);
+            opacity: 0.3;
+        }
+        .bronze-gradient {
+            background: linear-gradient(135deg, #a67c52 0%, #8b6542 100%);
+        }
+        .nav-link {
+            @apply text-xs uppercase tracking-[0.2em] font-medium text-forest-light hover:text-bronze transition-colors;
+        }
+        .full-bleed-img {
+            @apply w-full h-[600px] object-cover;
+        }
+    </style>
+</head>
+<body class="selection:bg-bronze/20 selection:text-forest">
+<nav class="fixed top-0 w-full z-50 bg-cream/90 backdrop-blur-sm border-b border-forest/5">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1400px] mx-auto">
+<div class="text-2xl font-serif italic tracking-tighter text-forest">
+            EasyLab <span class="text-bronze">Club</span>
+</div>
+<div class="hidden lg:flex items-center space-x-12">
+<a class="nav-link" href="#">The Philosophy</a>
+<a class="nav-link" href="#">Methodology</a>
+<a class="nav-link" href="#">Curriculum</a>
+<a class="nav-link" href="#">The Collective</a>
+</div>
+<div class="flex items-center space-x-8">
+<button class="text-xs uppercase tracking-widest font-semibold text-forest-light hover:text-bronze">Sign In</button>
+<button class="bg-forest text-cream px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-forest-light transition-all">
+                Join the Club
+            </button>
+</div>
+</div>
+</nav>
+<main>
+<section class="pt-40 pb-20 px-6 max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<span class="text-xs uppercase tracking-[0.3em] text-bronze font-bold mb-6 block">Volume I: The Architecture of Excellence</span>
+<h1 class="text-6xl md:text-8xl mb-8 leading-[0.95] text-forest">
+                    Refined operational <br/><i class="text-bronze">mastery.</i>
+</h1>
+<p class="text-xl md:text-2xl text-forest-light font-light max-w-xl mb-12 leading-relaxed">
+                    Elevating how leaders and high-stakes teams operate. Precision, sequence, and the quiet pursuit of professional perfection.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-forest text-cream px-10 py-5 text-sm uppercase tracking-widest font-bold hover:bg-forest-light transition-all border border-forest">
+                        Examine the Programs
+                    </button>
+<button class="bg-transparent text-forest border border-forest/20 px-10 py-5 text-sm uppercase tracking-widest font-bold hover:border-bronze transition-all">
+                        Begin the Lab
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative group">
+<div class="absolute -inset-2 border border-bronze/20 translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+<img alt="Sophisticated Workspace" class="w-full aspect-[4/5] object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIOS8r9potIgk07kTAlIqF_iZMhJfNJiw4ARbvvDTxA9Xtu_GUW9XeexYjxqu7yIF4uCezWKZOB4LFpJ6jeOQiHZzzzSNLRSDSnb9VK7i_LlffXyoi_8TkN7Uq_ZO9xU2NTznW7aZPnDse729_VMbteW86XZtsleoci-_EWuijUlU-wAtRL4bS0P3q6runydpUNuE7bJI_BVkzxDgdfu8OivLFLDI_POHYomjCZ6amzh6r-P6h63qoy4HMl09s7sFj7BG77TROSZk"/>
+</div>
+</div>
+</div>
+</section>
+<div class="editorial-rule max-w-7xl mx-auto my-12"></div>
+<section class="bg-cream-dark py-32">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl mb-10 text-forest">The Performance Paradox</h2>
+<div class="w-12 h-0.5 bg-bronze mx-auto mb-10"></div>
+<p class="text-2xl md:text-3xl font-serif text-forest-light italic leading-relaxed">
+                "Modern professional education often prioritizes the accumulation of knowledge over the precision of execution. True operational excellence is not found in more information, but in the sophisticated architecture of one's daily systems."
+            </p>
+</div>
+</section>
+<section class="py-32 px-6 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="text-5xl mb-8">The Pillars of <br/>Operational Mastery</h2>
+<p class="text-forest-light text-lg font-light leading-relaxed mb-12">Our methodology follows a rigorous triptych designed for sustainable evolution.</p>
+<div class="space-y-16">
+<div class="group">
+<span class="font-serif text-3xl italic text-bronze block mb-4">01. Cognitive Synthesis</span>
+<h3 class="text-2xl font-semibold mb-3">Learn</h3>
+<p class="text-forest-light leading-relaxed">Absorb mental models and frameworks architected by elite practitioners. Targeted, high-utility philosophy that prioritizes structural logic.</p>
+</div>
+<div class="group">
+<span class="font-serif text-3xl italic text-bronze block mb-4">02. Applied Precision</span>
+<h3 class="text-2xl font-semibold mb-3">Apply</h3>
+<p class="text-forest-light leading-relaxed">Translate theory into immediate operational artifacts. Our modules require rigorous application against your existing organizational architecture.</p>
+</div>
+<div class="group">
+<span class="font-serif text-3xl italic text-bronze block mb-4">03. Perpetual Refinement</span>
+<h3 class="text-2xl font-semibold mb-3">Improve</h3>
+<p class="text-forest-light leading-relaxed">Continuous optimization via expert feedback loops. The objective is not arrival, but the tireless pursuit of operational perfection.</p>
+</div>
+</div>
+</div>
+<div class="sticky top-40 hidden lg:block">
+<img alt="Executive Detail" class="w-full grayscale shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnthDoQ2ZHyBgOp6OAtKL-gpRdgB02nq1JV4CXJDasuQO1H5CjzI2c9eGz7zQuSA-7o9TzHgIErButEL-R6v5pnAqJB5sCVgy57R1UHzEKDbeP_9hd4T-EaQDl6o3bhPVEk7o4jyRAeEOZYitkBwGZM7OWUkUuHfPVMM7pjTPW3ke6f4rEPH47dVV5uSNCczOVXzPTeHt62lP9W2vyyHEBLc0ORM3gvMWumZ_FHJPwiBTvcll-ostW3knNTbzCjgG68wCxFWzgfn0"/>
+</div>
+</div>
+</section>
+<section class="bg-forest py-32 px-6">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid md:grid-cols-2 gap-1">
+<div class="bg-forest-light p-16 border border-white/5 flex flex-col justify-between min-h-[600px]">
+<div>
+<span class="text-xs tracking-[0.3em] text-bronze uppercase font-bold block mb-8">For Organizations</span>
+<h3 class="text-5xl text-cream mb-8">Executive Programs</h3>
+<p class="text-cream/70 text-xl font-light mb-12 leading-relaxed max-w-md">Comprehensive transformation for leadership circles and strategic departments seeking operational alignment.</p>
+<ul class="space-y-6 mb-12">
+<li class="flex items-center gap-4 text-cream/90"><span class="material-symbols-outlined text-bronze" style="font-size: 18px;">adjust</span> Custom Strategic Roadmaps</li>
+<li class="flex items-center gap-4 text-cream/90"><span class="material-symbols-outlined text-bronze" style="font-size: 18px;">adjust</span> Collective KPI Architecture</li>
+<li class="flex items-center gap-4 text-cream/90"><span class="material-symbols-outlined text-bronze" style="font-size: 18px;">adjust</span> Private Advisory Sessions</li>
+</ul>
+</div>
+<button class="w-fit bg-bronze text-forest font-bold px-10 py-4 text-xs uppercase tracking-widest hover:bg-bronze-light transition-all">
+                        Request Consultation
+                    </button>
+</div>
+<div class="bg-forest p-16 border border-white/5 flex flex-col justify-between min-h-[600px]">
+<div>
+<span class="text-xs tracking-[0.3em] text-bronze uppercase font-bold block mb-8">For Individuals</span>
+<h3 class="text-5xl text-cream mb-8">The Lab Modules</h3>
+<p class="text-cream/70 text-xl font-light mb-12 leading-relaxed max-w-md">Modular, focused deep-dives for individual practitioners refining their specific operational craft.</p>
+<ul class="space-y-6 mb-12">
+<li class="flex items-center gap-4 text-cream/90"><span class="material-symbols-outlined text-bronze" style="font-size: 18px;">science</span> Self-Paced Mastery Paths</li>
+<li class="flex items-center gap-4 text-cream/90"><span class="material-symbols-outlined text-bronze" style="font-size: 18px;">science</span> Proprietary Workflow Templates</li>
+<li class="flex items-center gap-4 text-cream/90"><span class="material-symbols-outlined text-bronze" style="font-size: 18px;">science</span> Verified Performance Credentials</li>
+</ul>
+</div>
+<button class="w-fit border border-cream/20 text-cream font-bold px-10 py-4 text-xs uppercase tracking-widest hover:bg-cream hover:text-forest transition-all">
+                        Explore Modules
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-5xl mb-6">The Collective Intellect</h2>
+<p class="text-xl text-forest-light font-light max-w-2xl mx-auto">Access to the EasyLab Network—a discrete council of high-performance operators refining the future of work.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="p-8 border-t border-forest/10 hover:border-bronze transition-all bg-cream-dark">
+<h4 class="text-xl font-serif italic mb-2">Live Strategy Clinics</h4>
+<p class="text-sm text-forest-light font-light">Real-time resolution for complex organizational friction.</p>
+</div>
+<div class="p-8 border-t border-forest/10 hover:border-bronze transition-all bg-cream-dark">
+<h4 class="text-xl font-serif italic mb-2">Peer Audits</h4>
+<p class="text-sm text-forest-light font-light">Refine your architectural models with expert cross-review.</p>
+</div>
+<div class="p-8 border-t border-forest/10 hover:border-bronze transition-all bg-cream-dark">
+<h4 class="text-xl font-serif italic mb-2">The Template Vault</h4>
+<p class="text-sm text-forest-light font-light">Curated standards for operational consistency.</p>
+</div>
+<div class="p-8 border-t border-forest/10 hover:border-bronze transition-all bg-cream-dark">
+<h4 class="text-xl font-serif italic mb-2">Regional Councils</h4>
+<p class="text-sm text-forest-light font-light">Exclusive local dialogues for the operational elite.</p>
+</div>
+</div>
+<div class="mt-20 flex justify-center">
+<div class="flex items-center gap-6 px-8 py-4 bg-forest text-cream">
+<div class="flex -space-x-3">
+<img alt="" class="w-10 h-10 rounded-full border-2 border-forest grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOM3Zyu82LpGGtAkQ6TaGhknQJXHwiZ6MVDJzMwjXlTQ8AuRW-h3J_NiBArSsZuBlyzY__QkiEZTPwsWOXMUJ8nWd2BNC8cgFdscLEE7cL_vattzpqbSd2IcUks_U7-09ubFbTCR6jp-7f8gTJMI-nRrhUaKXIadpDlny8hxZMvxzesClQ-jdQXTU0gvo53NfyU-MzZGUP-g2wLZzde_PWEWiP1xmS5BUcBHUe8QLvmp-zZfcK7hrbbvDAxUIGfBbx-wb81uXoz0A"/>
+<img alt="" class="w-10 h-10 rounded-full border-2 border-forest grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsYeBjgO30bX-PnnRolug9j9McOEf3I4DGZ_TzqOlbjujY6zG_IaU688cNbJwu0Ij6Y5Tyr9IT1G7IY4RnvN9FxDNj1rWrPbb9Kda489bzoXN5Tj_3nvzDH2R4E7Z6g_o2tcP-xZf2R7ZgUd-Z-rQNeYgbuL1nhDdacDQVcqyZ2O6CxFuvhqQQAP1Ge4z4jYwqgbW9JtyDnoYQVLSCWgcOeXZ45A7oH-v0kQHH3h_T_t2-xSngLaMOdW0lvXVjOOCN4Hlfn3cdBjU"/>
+</div>
+<span class="text-xs uppercase tracking-widest font-bold">2,400+ Active Fellows</span>
+</div>
+</div>
+</section>
+<section class="py-40 px-6">
+<div class="max-w-5xl mx-auto bg-cream-dark border border-forest/5 p-20 text-center relative">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-bronze text-6xl">architecture</span>
+</div>
+<h2 class="text-5xl md:text-6xl mb-8">Architect your <i class="text-bronze">excellence.</i></h2>
+<p class="text-xl text-forest-light max-w-xl mx-auto mb-12 font-light">Join the ranks of those who value the quiet mastery of operational discipline over the noise of conventional productivity.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-forest text-cream px-12 py-5 text-sm uppercase tracking-widest font-bold hover:bg-forest-light transition-all">Begin Transformation</button>
+<button class="bg-transparent border border-forest/20 text-forest px-12 py-5 text-sm uppercase tracking-widest font-bold hover:border-forest transition-all">Corporate Inquiry</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-forest py-24 px-12">
+<div class="max-w-[1400px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start border-b border-white/10 pb-16 mb-16">
+<div class="mb-12 md:mb-0">
+<div class="text-3xl font-serif italic text-cream mb-6">EasyLab <span class="text-bronze">Club</span></div>
+<p class="text-cream/40 text-sm max-w-xs font-light leading-relaxed">Dedicated to the refined operational mastery of individuals and teams worldwide.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="flex flex-col space-y-4">
+<span class="text-xs uppercase tracking-widest text-bronze font-bold mb-2">Edition</span>
+<a class="text-cream/60 hover:text-cream text-sm" href="#">Philosophies</a>
+<a class="text-cream/60 hover:text-cream text-sm" href="#">Case Studies</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-xs uppercase tracking-widest text-bronze font-bold mb-2">Programs</span>
+<a class="text-cream/60 hover:text-cream text-sm" href="#">Enterprise</a>
+<a class="text-cream/60 hover:text-cream text-sm" href="#">Individual</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-xs uppercase tracking-widest text-bronze font-bold mb-2">Legal</span>
+<a class="text-cream/60 hover:text-cream text-sm" href="#">Privacy</a>
+<a class="text-cream/60 hover:text-cream text-sm" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-[0.2em] text-cream/30 font-bold">
+<div>© 2024 The EasyLab Club. Operational Excellence.</div>
+<div class="mt-4 md:mt-0">All Rights Reserved</div>
+</div>
+</div>
+</footer>
+
+</body></html>

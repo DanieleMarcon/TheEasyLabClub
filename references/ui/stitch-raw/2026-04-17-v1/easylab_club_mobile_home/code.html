@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EasyLab Club - The Clinical Atelier</title>
+<!-- Font Imports -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#516075",
+                        "secondary-fixed": "#d4e4fc",
+                        "inverse-primary": "#b3cdfd",
+                        "on-error-container": "#752121",
+                        "tertiary-fixed": "#dbdafb",
+                        "tertiary-fixed-dim": "#cdccec",
+                        "on-primary-fixed": "#254067",
+                        "outline-variant": "#a7b4ba",
+                        "on-surface-variant": "#546166",
+                        "on-background": "#283439",
+                        "on-tertiary": "#fbf7ff",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-container": "#d4e4fc",
+                        "surface": "#f7fafc",
+                        "error-dim": "#4e0309",
+                        "tertiary-dim": "#50516c",
+                        "on-primary-container": "#38527b",
+                        "secondary-dim": "#455468",
+                        "on-surface": "#283439",
+                        "on-secondary": "#f7f9ff",
+                        "error-container": "#fe8983",
+                        "primary-container": "#d6e3ff",
+                        "on-secondary-fixed-variant": "#4e5d71",
+                        "primary": "#455f88",
+                        "outline": "#707d82",
+                        "primary-fixed-dim": "#bfd5ff",
+                        "surface-container-high": "#dfeaef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#425c85",
+                        "inverse-surface": "#0b0f10",
+                        "inverse-on-surface": "#9a9d9f",
+                        "surface-tint": "#455f88",
+                        "surface-variant": "#d7e5eb",
+                        "surface-container-highest": "#d7e5eb",
+                        "surface-bright": "#f7fafc",
+                        "on-primary": "#f6f7ff",
+                        "surface-container": "#e7eff3",
+                        "tertiary": "#5d5d78",
+                        "surface-container-low": "#eff4f7",
+                        "background": "#f7fafc",
+                        "primary-dim": "#39537c",
+                        "secondary-fixed-dim": "#c6d5ee",
+                        "on-tertiary-container": "#4c4c67",
+                        "error": "#9f403d",
+                        "on-secondary-container": "#445367",
+                        "on-tertiary-fixed": "#393953",
+                        "surface-dim": "#ccdde4",
+                        "on-secondary-fixed": "#324054",
+                        "on-error": "#fff7f6",
+                        "tertiary-container": "#dbdafb",
+                        "on-tertiary-fixed-variant": "#555571"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .glass-nav { background: rgba(247, 250, 252, 0.8); backdrop-filter: blur(12px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f7fafc]/80 backdrop-blur-md flex justify-between items-center w-full px-6 h-16 transition-transform duration-200">
+<button class="hover:bg-slate-200/50 p-2 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[#455f88]">menu</span>
+</button>
+<h1 class="Manrope display-md -tracking-[0.02em] font-bold text-xl tracking-tight text-[#2D3748]">EasyLab Club</h1>
+<button class="hover:bg-slate-200/50 p-2 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[#455f88]">account_circle</span>
+</button>
+</header>
+<main class="mt-16">
+<!-- Hero Section -->
+<section class="px-6 py-12 bg-surface">
+<div class="max-w-md mx-auto">
+<h2 class="text-4xl font-extrabold text-on-surface leading-tight -tracking-[0.02em] mb-4">
+                    Improve how you work, not just what you know
+                </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                    Operational learning for people and teams who want real results.
+                </p>
+<div class="flex flex-col gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary py-4 px-6 rounded-xl font-semibold shadow-md active:scale-95 transition-transform">
+                        Explore Programs
+                    </button>
+<button class="bg-surface-container-lowest text-primary py-4 px-6 rounded-xl font-semibold border border-[#a7b4ba]/15 active:scale-95 transition-transform">
+                        Start with the Lab
+                    </button>
+</div>
+</div>
+<div class="mt-12 overflow-hidden rounded-2xl">
+<img class="w-full h-64 object-cover" data-alt="Modern minimalist office workspace with high-end furniture, natural soft lighting, and a focused professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI8SPnDjI7Z4Hqo69nuzYPJfr5ecRmPTQISZGTaUyxZG7nZghFfSfWXdDJP5eYYhJA9kfAo5dSIcRwH9m_-ixLJYofk_Cpo7ZdSCHlXtagNMOv_z8zYaciaZBSVzxAT-tkAkd6EgTNjheDCGQTeXJAO29cCgx6Zeg8IBXa_64OAWZ4MvAjED1B9NTmaHsOz6kx7JPR42cIyVNMbQlLndXOcSQJ5dk7WHhNltDY4boKoTuESyD-Gvj-KDHsKLlcCcXU2jcWtgSiclM"/>
+</div>
+</section>
+<!-- The Learning Gap -->
+<section class="px-6 py-16 bg-surface-container-low">
+<div class="max-w-md mx-auto">
+<span class="text-primary font-bold text-sm tracking-widest uppercase mb-4 block">The Gap</span>
+<h3 class="text-2xl font-bold mb-6 text-on-surface">The invisible wall of professional growth</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                    Most professional training is designed for consumption, not execution. It creates a "learning high" that evaporates the moment you return to your real desk.
+                </p>
+<p class="text-on-surface-variant leading-relaxed">
+                    At the EasyLab Club, we focus on the bridge between theory and practice—the operational mechanics that turn knowledge into sustained performance.
+                </p>
+</div>
+</section>
+<!-- Our Approach -->
+<section class="px-6 py-16 bg-surface">
+<div class="max-w-md mx-auto space-y-8">
+<h3 class="text-2xl font-bold mb-10 text-center">Our Methodology</h3>
+<!-- Learn -->
+<div class="flex gap-6 items-start">
+<div class="bg-primary-container text-primary p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface mb-2">Learn</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Compressed, clinical insights that focus on high-impact operational frameworks.</p>
+</div>
+</div>
+<!-- Apply -->
+<div class="flex gap-6 items-start">
+<div class="bg-secondary-container text-secondary p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface mb-2">Apply</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Direct translation to your actual projects through guided lab sessions.</p>
+</div>
+</div>
+<!-- Improve -->
+<div class="flex gap-6 items-start">
+<div class="bg-tertiary-container text-tertiary p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface mb-2">Improve</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Iterative feedback loops that ensure new habits become your permanent standard.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Two Paths -->
+<section class="px-6 py-16 space-y-6">
+<!-- Programs for Teams -->
+<div class="relative overflow-hidden rounded-3xl bg-inverse-surface text-surface p-8 min-h-[320px] flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay" data-alt="A collaborative team of professionals working in a high-tech lab environment with glass walls and focused expressions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArf0USb9QqyKtVKQcZ88TZBe83Jf55HG8B62jEQIAgKCJl5c5uW62DVeqytbdxtbW-WcDXRRTOryes3neBCz-FyukH_xsGIaos3zre89roZzhqQBdGJPUO1jaJO4QGnMNXEc9X9wNI3XtTOBkNzbbU3Wjd2-ddMKJMqWHBmZM9C1KfcwwCOBASlRfP8ib8r4gUDQkp3TVZ7YZI13eV8Y6dsPHgzOZdgcfihDebKmD7KeM1feIizbmpoxM8DvnTTEjCcFHSoYktF6Q"/>
+<div class="relative z-10">
+<h4 class="text-2xl font-bold mb-2">Programs for Teams</h4>
+<p class="text-surface-dim mb-6 text-sm">Strategic transformation for operational excellence.</p>
+<button class="bg-surface text-inverse-surface py-3 px-6 rounded-lg font-bold text-sm w-fit">View Curriculum</button>
+</div>
+</div>
+<!-- Lab Modules -->
+<div class="relative overflow-hidden rounded-3xl bg-primary text-on-primary p-8 min-h-[320px] flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="Close up of a researcher working with digital holographic data in a modern clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB76rzn1N_8l06qciKMy1ZPkxCaNRgPDbGBAFXDENJK8cUfFkmcspP4qfZdGjtq8A6Vkoe5mpO2I-dgJxPC69wtSE9YcpeqQ8bWWmI0NAUfDfEWuqHIoF57esA71cTj5yg3quH_Zp8yza74JcEuw0ow8kZFc9xcTHDw8I8HKt7bplNbGT-ypYnH1L261P6RyXmmGdNR3lBkHgaIRBWx2WMZ72CNOi3OA5OCNIRiEcDqFSNcmCioDQbjvSaC0n9Y7X0V_maxEpqKC-k"/>
+<div class="relative z-10">
+<h4 class="text-2xl font-bold mb-2">Lab Modules</h4>
+<p class="text-on-primary opacity-80 mb-6 text-sm">Self-paced precision tools for individual growth.</p>
+<button class="bg-surface-container-lowest text-primary py-3 px-6 rounded-lg font-bold text-sm w-fit">Browse Modules</button>
+</div>
+</div>
+</section>
+<!-- Network -->
+<section class="px-6 py-16 bg-surface-container-high relative overflow-hidden">
+<div class="max-w-md mx-auto relative z-10">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold">Network</h3>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">hub</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                    "Learning does not stop after a module."
+                </p>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/10">
+<p class="text-on-surface text-sm font-medium mb-4">
+                        The EasyLab Network is a layer of continuity where alumni and practitioners exchange real-time operational shifts.
+                    </p>
+<a class="text-primary font-bold flex items-center gap-2 text-sm" href="#">
+                        Explore the Community <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer CTA -->
+<section class="px-6 py-24 text-center bg-surface">
+<div class="max-w-md mx-auto">
+<h3 class="text-3xl font-extrabold mb-4">Improve how you work</h3>
+<p class="text-on-surface-variant mb-10">Ready to bridge the learning gap?</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold shadow-lg shadow-primary/20 active:scale-95 transition-transform">
+                    Get Started Now
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#f7fafc]/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] border-t border-[#a7b4ba]/15 z-50">
+<div class="flex flex-col items-center justify-center text-[#455f88] font-bold scale-110 transition-all duration-300 ease-in-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="Inter label-md font-medium tracking-wide text-[10px] mt-1">Learn</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#707d82] transition-all duration-300 ease-in-out hover:text-[#455f88]">
+<span class="material-symbols-outlined">biotech</span>
+<span class="Inter label-md font-medium tracking-wide text-[10px] mt-1">Apply</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#707d82] transition-all duration-300 ease-in-out hover:text-[#455f88]">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="Inter label-md font-medium tracking-wide text-[10px] mt-1">Improve</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#707d82] transition-all duration-300 ease-in-out hover:text-[#455f88]">
+<span class="material-symbols-outlined">public</span>
+<span class="Inter label-md font-medium tracking-wide text-[10px] mt-1">Network</span>
+</div>
+</nav>
+</body></html>

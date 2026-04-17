@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs for Teams | The EasyLab Club</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#ccdde4",
+                    "on-secondary-fixed-variant": "#4e5d71",
+                    "tertiary-dim": "#50516c",
+                    "on-secondary-container": "#445367",
+                    "surface-tint": "#455f88",
+                    "on-background": "#283439",
+                    "surface": "#f7fafc",
+                    "on-error": "#fff7f6",
+                    "primary-dim": "#39537c",
+                    "on-secondary": "#f7f9ff",
+                    "on-primary-fixed-variant": "#425c85",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface": "#283439",
+                    "tertiary-fixed-dim": "#cdccec",
+                    "secondary-fixed-dim": "#c6d5ee",
+                    "on-primary": "#f6f7ff",
+                    "tertiary": "#5d5d78",
+                    "surface-container": "#e7eff3",
+                    "on-surface-variant": "#546166",
+                    "surface-container-highest": "#d7e5eb",
+                    "on-tertiary-container": "#4c4c67",
+                    "error-dim": "#4e0309",
+                    "secondary": "#516075",
+                    "error": "#9f403d",
+                    "primary": "#455f88",
+                    "secondary-dim": "#455468",
+                    "primary-fixed-dim": "#bfd5ff",
+                    "on-error-container": "#752121",
+                    "inverse-on-surface": "#9a9d9f",
+                    "surface-variant": "#d7e5eb",
+                    "tertiary-fixed": "#dbdafb",
+                    "on-secondary-fixed": "#324054",
+                    "background": "#f7fafc",
+                    "secondary-container": "#d4e4fc",
+                    "inverse-primary": "#b3cdfd",
+                    "on-primary-container": "#38527b",
+                    "on-primary-fixed": "#254067",
+                    "inverse-surface": "#0b0f10",
+                    "primary-container": "#d6e3ff",
+                    "surface-bright": "#f7fafc",
+                    "tertiary-container": "#dbdafb",
+                    "outline-variant": "#a7b4ba",
+                    "on-tertiary": "#fbf7ff",
+                    "on-tertiary-fixed": "#393953",
+                    "outline": "#707d82",
+                    "surface-container-high": "#dfeaef",
+                    "surface-container-low": "#eff4f7",
+                    "secondary-fixed": "#d4e4fc",
+                    "on-tertiary-fixed-variant": "#555571",
+                    "error-container": "#fe8983",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .ambient-shadow {
+            box-shadow: 0 8px 32px 0 rgba(40, 52, 57, 0.06);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f7fafc]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#2D3748] brand-font">Programs for Teams</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-[#455f88] border-b-2 border-[#455f88] pb-1 font-medium transition-all" href="#">Programs</a>
+<a class="text-[#707d82] hover:text-[#455f88] transition-colors" href="#">Process</a>
+<a class="text-[#707d82] hover:text-[#455f88] transition-colors" href="#">Outcomes</a>
+<a class="text-[#707d82] hover:text-[#455f88] transition-colors" href="#">For Teams</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#707d82] font-medium px-4 py-2 hover:bg-[#eff4f7] rounded-lg transition-all">Login</button>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-6 py-2.5 rounded-xl font-medium shadow-sm hover:scale-95 transition-all duration-200">Get Started</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-24 md:py-32 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest rounded-full mb-6">THE CLINICAL ATELIER</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-background leading-[1.1] tracking-tight mb-8">
+                        Programs for Teams
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
+                        Structured paths to improve how your team works. We engineer clarity through applied operational excellence.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:scale-95 transition-all">
+                            Request a consultation
+                        </button>
+<button class="flex items-center gap-2 px-8 py-4 text-primary font-semibold hover:bg-surface-container-low rounded-xl transition-all">
+                            View Curriculum <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-highest rounded-full flex items-center justify-center p-8 relative overflow-hidden">
+<img alt="Clinical Precision" class="w-full h-full object-cover rounded-full mix-blend-multiply opacity-80" data-alt="minimalist architectural detail of a modern white building with sharp shadows and clean geometric lines under bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCao3FR_-AYl_4dKdbD1Ee4bFL5Iq5BZqTo0ljqOJ5NPAyfLxqGSG-asvv3iy1gOlseRLzJdB996n-us3hvX2BDdetN_E0GEZzcxK1T0Tn9bc0M7W6wyBoEA3bTID1i-GLtNrhHVMZggOL4fYUKTrHz7wsHteGZVTLwPqKaSDq886D-t7YY8Dt5pxgDel_p67n5RZ_Lwg_hw1UMltTsGf0cwxooah7kfp8EBWscpToQoxiXfukZ0ZZJxsJSWQ08CRXeZnrr9aWg4WU"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<div class="sticky top-32">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-on-background mb-4">Precision over genericism.</h2>
+<div class="w-16 h-1 bg-primary mb-8"></div>
+</div>
+<div class="space-y-8">
+<p class="text-xl text-on-surface-variant leading-relaxed italic border-l-4 border-surface-container-highest pl-8">
+                        "We do not offer courses. We offer transformations. These are guided, applied paths specifically designed for teams who demand high-level operational execution."
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        The Clinical Atelier approach treats team dynamics like a laboratory environment. We analyze bottlenecks, define goals with clinical precision, and implement structured programs that yield measurable results. Focus is our primary currency; excellence is the only acceptable outcome.
+                    </p>
+</div>
+</div>
+</section>
+<!-- How It Works (Bento Step Grid) -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<h2 class="text-display-md font-bold mb-16 tracking-tight text-center">The Methodology</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl ambient-shadow border border-outline-variant/10">
+<div class="text-primary-dim font-headline font-extrabold text-4xl mb-6 opacity-30">01</div>
+<h3 class="text-xl font-bold mb-4">Initial Analysis</h3>
+<p class="text-on-surface-variant leading-relaxed">Deep-dive audit into current workflows, tool usage, and friction points within the team structure.</p>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl ambient-shadow border border-outline-variant/10 md:translate-y-8">
+<div class="text-primary-dim font-headline font-extrabold text-4xl mb-6 opacity-30">02</div>
+<h3 class="text-xl font-bold mb-4">Goal Definition</h3>
+<p class="text-on-surface-variant leading-relaxed">Establishing rigorous KPIs and North Star objectives tailored to the unique output of your department.</p>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl ambient-shadow border border-outline-variant/10">
+<div class="text-primary-dim font-headline font-extrabold text-4xl mb-6 opacity-30">03</div>
+<h3 class="text-xl font-bold mb-4">Structured Program</h3>
+<p class="text-on-surface-variant leading-relaxed">A bespoke curriculum deployed over 4-8 weeks, focusing on high-impact behavioral and technical changes.</p>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl ambient-shadow border border-outline-variant/10 md:col-span-2">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="flex-shrink-0">
+<div class="text-primary-dim font-headline font-extrabold text-4xl mb-6 opacity-30">04</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Real-world Application</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-2xl">Integration of new frameworks directly into active projects. We do not learn in a vacuum; we evolve while in production.</p>
+</div>
+</div>
+</div>
+<!-- Step 05 -->
+<div class="bg-primary text-on-primary p-10 rounded-xl shadow-xl flex flex-col justify-end">
+<div class="font-headline font-extrabold text-4xl mb-6 text-on-primary/30">05</div>
+<h3 class="text-xl font-bold mb-4">Optimization</h3>
+<p class="text-on-primary/80 leading-relaxed">Post-program review and fine-tuning to ensure the new operating system remains permanent.</p>
+</div>
+</div>
+</section>
+<!-- Outcomes Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4">
+<h2 class="text-4xl font-bold tracking-tight mb-6">Quantifiable Evolution</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">Our programs focus on the tangible metrics that define high-performing organizations.</p>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">timer</span>
+<div>
+<h4 class="font-bold text-lg mb-2">Less wasted time</h4>
+<p class="text-on-surface-variant">Reduction in friction through refined communication protocols and meeting discipline.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">account_tree</span>
+<div>
+<h4 class="font-bold text-lg mb-2">Clearer processes</h4>
+<p class="text-on-surface-variant">Documented, repeatable systems that eliminate ambiguity and decision fatigue.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">build</span>
+<div>
+<h4 class="font-bold text-lg mb-2">Better use of tools</h4>
+<p class="text-on-surface-variant">Mastery of the existing digital stack, ensuring technology serves the mission, not vice-versa.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">bolt</span>
+<div>
+<h4 class="font-bold text-lg mb-2">More autonomy</h4>
+<p class="text-on-surface-variant">Empowering individual contributors through clear ownership and operational visibility.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Example Programs (High-end Editorial Cards) -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<h2 class="text-4xl font-bold tracking-tight">Active Curriculums</h2>
+<p class="text-on-surface-variant max-w-xs text-sm uppercase tracking-widest font-bold">Selection 2024 / Volume I</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-8 overflow-hidden rounded-xl relative">
+<img alt="AI Efficiency" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="extreme close-up of high-tech server hardware with soft blue glowing lights and brushed metal textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjxa5M1-KRwSCtRPMRwAEiPTBqQpVUS3jPsFE36pblArS5Skm-OgRBeLFqTetVBn1Hp2c_EMP_fl6ymMH00-Z4pudXXOWUT8wMQta4ZCgK7pjMexNw9XAlkh3zpUAiHgdPBr6OH6qzG3SYuSzi_44ndTUTwfHF46etJrf2nxz1atN1c_vcWOlQ8z_ZYJaavjpsXszbJCSP5r8UFhQRAXQsGH1XsKUUFCxlovBlrc3LgZyjeRBcdC5G1VJ-E-ou5nZKv6ROzjVYpu0"/>
+<div class="absolute top-6 left-6">
+<span class="bg-surface/90 backdrop-blur-md text-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Automate</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-3">AI &amp; Workflow for Teams</h3>
+<p class="text-on-surface-variant leading-relaxed">Implementing generative AI and automation to reclaim 10+ hours of team capacity per week.</p>
+<div class="mt-6 flex items-center text-primary font-bold text-sm">
+                        EXPLORE PROGRAM <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer lg:translate-y-12">
+<div class="aspect-[4/5] bg-surface-container-low mb-8 overflow-hidden rounded-xl relative">
+<img alt="Digital Stack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="overhead shot of a minimalist workstation with a sleek laptop, glass water bottle, and single designer pen on light gray felt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgy0PHJv6h9Ps2g65lnMC7WwFEAasiF90l2DAuHpPiacMe9QYFkvVdEEHjNGrIk6hRei8xCjX5XkAyXoT69LrCARrB6U8SFDySmki65373vfRRzEonr--BO9e54hXz4CqaCbaHGClsOzJy-4bDWIZZFbAEjk-eIziFYCORW5cNVg38rFAfV02cm4QIQY5cnit22may_Jr8U3jc4G6FPTG10-nDO69pYuPGv3b3aaE743TKqYA_LqPuE7ih2XoDbBP_QZJESyjjGE4"/>
+<div class="absolute top-6 left-6">
+<span class="bg-surface/90 backdrop-blur-md text-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Mastery</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-3">Tools &amp; Digital Productivity</h3>
+<p class="text-on-surface-variant leading-relaxed">Standardizing the tech stack for maximum synergy across asynchronous communication and task management.</p>
+<div class="mt-6 flex items-center text-primary font-bold text-sm">
+                        EXPLORE PROGRAM <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-8 overflow-hidden rounded-xl relative">
+<img alt="Organizational Clarity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="clean abstract image of organized white laboratory glassware on a stone countertop with soft diffused natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_LzKGoASyZ5COahRO50syjgHzLMXTlAYEpbJGSBRr2I1ZPE3HfTb5SLMNxpAvudlJIl9fPipR_ysv8ZoAS86vP1ea5PgZi9xMHPWt7EeLDe7b4xmzV7NUP9_pBg7gD0Nst8LomwBtxsdfHeSBKztVOGMgnwi4wk4mrDcNRsrSYxqjZdgoSnmMLuUb6EDzqz1vrrqBTRIBSQp12Tb3MWUlAucMmsR_Nto00aaH7PeMLax7I7e61ENzoq2eGM6kJlXjiczZInNPzF4"/>
+<div class="absolute top-6 left-6">
+<span class="bg-surface/90 backdrop-blur-md text-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Clarity</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-3">Organization &amp; Processes</h3>
+<p class="text-on-surface-variant leading-relaxed">Engineering the team's internal 'Operating System' to foster radical clarity and focused execution.</p>
+<div class="mt-6 flex items-center text-primary font-bold text-sm">
+                        EXPLORE PROGRAM <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation CTA Block -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="bg-primary text-on-primary rounded-xl p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<!-- Background Accent -->
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]" style="font-variation-settings: 'wght' 100;">science</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Tailored to your needs.</h2>
+<p class="text-xl text-on-primary/80 leading-relaxed">
+                            We don't believe in one-size-fits-all. Every program is customized to the specific team environment, existing tools, and desired outcomes.
+                        </p>
+</div>
+<div class="relative z-10">
+<button class="bg-on-primary text-primary px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-bright transition-all shadow-xl">
+                            Request a consultation
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#eff4f7] w-full py-12 mt-12">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<div class="text-lg font-semibold text-[#2D3748] brand-font mb-2">The Clinical Atelier</div>
+<p class="text-[#707d82] text-sm max-w-xs">Precision engineering for modern team dynamics.</p>
+<div class="mt-6 text-[#707d82] text-xs">© 2024 The Clinical Atelier. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+<a class="text-[#707d82] hover:text-[#455f88] underline decoration-[#455f88] underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="text-[#707d82] hover:text-[#455f88] underline decoration-[#455f88] underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="text-[#707d82] hover:text-[#455f88] underline decoration-[#455f88] underline-offset-4 transition-all" href="#">Contact Support</a>
+<a class="text-[#707d82] hover:text-[#455f88] underline decoration-[#455f88] underline-offset-4 transition-all" href="#">Global Research</a>
+</div>
+</div>
+</footer>
+</body></html>
