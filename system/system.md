@@ -275,3 +275,23 @@ If something reduces clarity, increases drift, or creates ambiguity:
 → remove it  
 → simplify it  
 → or leave it out
+
+## 18. System Layer
+
+The project uses a system-first architecture.
+
+Core file:
+
+* `/system/system.md` → highest authority
+
+Adapters:
+
+* `/system/claude.md`
+* `/system/agents.md`
+
+All tools must follow:
+
+system.md → docs → UI references → adapters
+
+Adapters do not define rules.
+They only execute them.
