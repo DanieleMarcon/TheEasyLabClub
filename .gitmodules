@@ -1,0 +1,3 @@
+[submodule "KB"]
+	path = KB
+	url = https://github.com/DanieleMarcon/idola-kb
